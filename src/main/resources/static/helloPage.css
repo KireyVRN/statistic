@@ -1,0 +1,21 @@
+body {
+  background: #7BA7AB;
+}
+.glow-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 30px 40px;
+  margin: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #464f47 inset, 0 0 0 0 #464f47;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+}
+.glow-button:hover {
+  box-shadow: 0 0 10px 0 #464f47 inset, 0 0 10px 4px #464f47;
+  color: #464f47;
+}

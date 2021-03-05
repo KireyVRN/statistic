@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>District</title>
+    <style th:inline="css">
+    body{
+ 	background-image: url('/static/district[[${district.city.id}]].jpg');
+ 	background-size: cover;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/static/district.css">
+</head>
+<body>
+<div class="six">
+
+    <h1 th:text="${district.name + ' район'}"><span>VALUE</span></h1>
+
+    <div class="ttt">
+        <br>
+        <p th:text="${'Площадь: ' + district.area + ' км²'}">VALUE</p>
+        <p th:text="${'Население: ' + district.population}">VALUE</p>
+        <p th:text="${'Преступлений за год: ' + district.amountOfCrimes}">VALUE</p>
+    </div>
+
+</div>
+
+</body>
+</html>
